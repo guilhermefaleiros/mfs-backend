@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres
+    container_name: transactions_container
+    environment:
+      POSTGRES_DB: transactions
+      POSTGRES_USER: transactions
+      POSTGRES_PASSWORD: transactions
+    ports:
+      - 5432:5432
